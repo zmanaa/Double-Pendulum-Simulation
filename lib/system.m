@@ -1,4 +1,4 @@
-function zprime = pendulum(t,z)
+function zprime = pendulum(t,z,m1,m2,L1,L2)
 % pendulum: is the sub-routine to integrate the system EOM.
 
 % z1        ---> represents theta 1
@@ -11,11 +11,7 @@ function zprime = pendulum(t,z)
 % zprime(3) ---> represents theta_double_prime 1
 % zprime(4) ---> represents theta_double_prime 2
 
-
-m1=9;
-m2=1;
-L1=1;
-L2=1;
+global m1 m2 L1 L2
 g=9.81;
 
 
